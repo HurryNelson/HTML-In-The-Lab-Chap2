@@ -5,7 +5,7 @@ File Name: style.css
 */
 
 /* CSS Reset */
-body, header, nav, main, footer, img, h1 {
+body, header, nav, main, footer, img, h1, ul{
     margin: 0;
     padding: 0;
     border: 0;
@@ -17,15 +17,22 @@ img {
     display: block;
 }
 
+/* Style rule for mobil viewport */
+
+/* Hide tab-desk class */
+.tab-desk {
+    display: none;
+}
+
 /* Style rules for header content */
 header {
     text-align: center;
-    font-size: 3em;
+    font-size: 1.5em;
     color: #373684;
 }
 
 header h1 {
-    font-style: italic;
+    font-family: 'DM Serif Display', serif;
 }
 
 /* Style rules for navigation area */
@@ -35,13 +42,13 @@ nav {
 
 nav ul {
     list-style-type: none;
-    margin: 0;
     text-align: center;
 }
 
 nav li {
-    display: inline-block;
+    display: block;
     font-size: 2em;
+    border-top: 1px solid #e5e9fc;
 }
 
 nav li a {
@@ -57,7 +64,7 @@ main {
     padding: 2%;
     background-color: #e5e9fc;
     overflow: auto;
-    font-family: Verdana, Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 main p {
@@ -65,14 +72,12 @@ main p {
 }
 
 .action {
-    font-size: 1.75em;
+    font-size: 1.25em;
     color: #373684;
     font-weight: bold;
 }
 
 #piano, #guitar, #violin {
-    width: 29%;
-    float: left;
     margin: 0 2%;
 }
 
@@ -82,8 +87,32 @@ main p {
     padding: 1% 2%;
 }
 
-#contact {
+#info ul {
+    margin-left: 10%;
+}
+
+.round {
+    border-radius: 8px;
+}
+
+#contact .email-link{
     text-align: center;
+}
+
+.tel-link {
+    background-color: #373684;
+    padding: 2%;
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.tel-link a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5em;
+    display: block;
 }
 
 #contact a {
@@ -94,6 +123,8 @@ main p {
 
 .map {
     border: 5px solid #373684;
+    width: 95%;
+    height: 50%;
 }
 
 /* Style for the footer content */
